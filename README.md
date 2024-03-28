@@ -5,6 +5,40 @@ ASSIGNMENT 3
 Name: Sanved Bahendwar
 SUID: 484052966
 
+
+Following are the steps for creating the required IOT system.
+
+Step 1: Establish a ThingSpeak Channel
+ThingSpeak serves as an IoT platform, facilitating data collection, analysis, and action from IoT devices. To set up a ThingSpeak channel:
+
+Log in to ThingSpeak or create an account if you're new to the platform.
+Navigate to the Channels section and select "Create New Channel."
+Provide essential details like channel name, description, and field labels.
+Save the channel configuration to activate it.
+Step 2: Incorporate an MQTT Device
+MQTT (Message Queuing Telemetry Transport) is a lightweight protocol ideal for IoT communication. To integrate an MQTT device with your ThingSpeak channel:
+
+Access the "Apps" section in your ThingSpeak account and choose "ThingHTTP."
+Create a new ThingHTTP instance, naming it and providing a brief description.
+Configure the ThingHTTP to transmit data to your ThingSpeak channel via MQTT. This involves specifying MQTT broker details and authentication credentials.
+Save the configuration settings to finalize the setup.
+Step 3: Develop Wokwi Code and Establish Connection
+Wokwi provides an online platform for crafting and testing Arduino code. To write Wokwi code and establish connectivity with ThingSpeak:
+
+Create your Arduino code within the Wokwi Arduino simulator, ensuring it includes MQTT client libraries for data transmission to the ThingSpeak MQTT broker.
+Configure the MQTT client in your code to establish a connection with the ThingSpeak MQTT broker, utilizing the provided authentication details from your ThingSpeak channel.
+Validate the functionality of your code within the Wokwi Arduino simulator to ensure it operates as expected.
+Once satisfied, upload the code to your physical Arduino device for deployment.
+Step 4: Analyze Data Using MATLAB
+MATLAB offers powerful tools for analyzing IoT data. To analyze data retrieved from your ThingSpeak channel:
+
+Utilize MATLAB's ThingSpeak support package to establish communication with your ThingSpeak channel.
+Retrieve data from your channel using MATLAB commands.
+Apply analysis techniques leveraging MATLAB's built-in functions and visualization tools, such as data filtering, trend analysis, and anomaly detection.
+Present analysis results through visualizations like plots and graphs, utilizing MATLAB's advanced visualization capabilities.
+
+
+
 WOKWI
 
 import network
